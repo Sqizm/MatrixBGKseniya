@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Матрица</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="bg-image"></nav>
+    <header>
+        <nav class="container">
+            <nav class="left">
+                <label for="day">День:</label>
+                <input type="number" id="day" min="1" max="31" required>
+                <label for="month">Месяц:</label>
+                <input type="number" id="month" min="1" max="12" required>
+                <label for="year">Год:</label>
+                <input type="number" id="year" required>
+                <button id="calculate">Рассчитать</button>
+            </nav>
+
+            <nav class="right">
+                <img src="img/photo.jpg">
+                <nav class="chip-container">
+                    <nav class="chip">
+                        <img src="icon/telegram.png" alt="telegram" width="96" height="96">
+                        <a href="https://t.me/BGKseniya" target="_blank">Telegram</a>
+                    </nav>
+
+                    <nav class="chip">
+                        <img src="icon/instagram.png" alt="instagram" width="96" height="96">
+                        <a href="https://www.instagram.com/kseniya_belodedova/" target="_blank">Instagram</a>
+                    </nav>
+
+                    <nav class="chip">
+                        <img src="icon/telegram.png" alt="telegram" width="96" height="96">
+                        <a href="https://t.me/kseniya_psy_ocifrovka" target="_blank">Телеграм-канал</a>
+                    </nav>
+
+                    <nav class="chip">
+                        <img src="icon/whatsapp.png" alt="whatsapp" width="96" height="96">
+                        <a href="#">+998974472889</a>
+                    </nav>
+
+<!--                    <nav class="chip">-->
+<!--                        <img src="icon/site.png" alt="site" width="96" height="96">-->
+<!--                        <a href="#contact" target="_blank">Мой сайт</a>-->
+<!--                    </nav>-->
+                </nav>
+            </nav>
+        </nav>
+
+        <nav id="myModal" class="modal">
+            <nav class="modal-content">
+                <span class="close">&times;</span>
+                <p>Пожалуйста, введите числа!</p>
+            </nav>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Расчет матрицы Пифагора</h1>
+        <nav class="table-responsive">
+            <nav class="table-for-mb">
+                <table style="width: 100%; border: 3px solid;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 365.25px; background-color: #FAEBD7;">Дата рождение: <span id="data"></span><br />Дополнительные числа: <span id="first-number"></span> <span id="second-number"></span> <span id="third-number"></span> <span id="fourth-number"></span><br />Число судьбы: <span id="destiny"></span></td>
+                            <td style="width: 304.75px; text-align: center; border: 3px solid; background-color: #FAEBD7;">Темперамент<br /><span id="temperament-cell"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </nav>
+        <nav class="table-responsive">
+            <nav class="table-resp-bord">
+                <table style="width: 100%; border: 3px solid; border-top: 0;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 121.7px; text-align: center; border: 3px solid; border-top: 0;">Характер<br /><span id="character-cell"></span></td>
+                            <td style="width: 121.7px; text-align: center; border: 3px solid; border-top: 0;">Здоровье<br /><span id="health-cell"></span></td>
+                            <td style="width: 121.7px; text-align: center; border: 3px solid; border-top: 0;">Удача<br /><span id="luck-cell"></span></td>
+                            <td style="width: 304.75px; text-align: center; border: 3px solid; border-top: 0; background-color: #FAEBD7;">Целеустремленность<br /><span id="purposefulness-cell"></span></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 121.7px;; text-align: center; border: 3px solid; border-top: 0;">Энергия<br /><span id="energy-cell"></span></td>
+                            <td style="width: 121.7px;; text-align: center; border: 3px solid; border-top: 0;">Логика<br /><span id="logic-cell"></span></td>
+                            <td style="width: 121.7px;; text-align: center; border: 3px solid; border-top: 0;">Долг<br /><span id="duty-cell"></span></td>
+                            <td style="width: 304.75px; text-align: center; border: 3px solid; border-top: 0; background-color: #FAEBD7;">Семья<br /><span id="family-cell"></span></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 121.7px;; text-align: center; border: 3px solid; border-top: 0;">Интерес<br /><span id="interest-cell"></span></td>
+                            <td style="width: 121.7px;; text-align: center; border: 3px solid; border-top: 0;">Труд<br /><span id="labor-cell"></span></td>
+                            <td style="width: 121.7px;; text-align: center; border: 3px solid; border-top: 0;">Память<br /><span id="memory-cell"></span></td>
+                            <td style="width: 304.75px; text-align: center; border: 3px solid; border-top: 0; background-color: #FAEBD7;">Стабильность<br /><span id="stable-cell"></span></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 121.7px; border: 3px solid; border-top: 0;">&nbsp;</td>
+                            <td style="width: 121.7px; text-align: center; border: 3px solid; border-top: 0;">Быт<br /><span id="everydayLife-cell"></span></td>
+                            <td style="width: 121.7px; border: 3px solid; border-top: 0;">&nbsp;</td>
+                            <td style="width: 304.75px border: 3px solid; border-top: 0;">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </nav>
+        <p style="color: black; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); margin-left: 10px;">Результат матрицы в строку: <span id="matrix-inline"></span></p>
+    </main>
+    <script src="js/script.min.js"></script>
+</body>
+</html>
