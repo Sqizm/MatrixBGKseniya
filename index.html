@@ -35,7 +35,7 @@
 
                     <nav class="chip">
                         <img src="icon/telegram.png" alt="telegram" width="96" height="96">
-                        <a href="https://t.me/kseniya_psy_ocifrovka" target="_blank">Телеграм-канал</a>
+                        <a href="https://t.me/kseniya_psy_ocifrovka" target="_blank">Канал</a>
                     </nav>
 
                     <nav class="chip">
@@ -55,6 +55,27 @@
             <nav class="modal-content">
                 <span class="close">&times;</span>
                 <p>Пожалуйста, введите числа!</p>
+            </nav>
+        </nav>
+
+        <nav id="isDay" class="modal">
+            <nav class="modal-content">
+                <span class="close">&times;</span>
+                <p>Пожалуйста, введите в строку ввода 'День' число от 1 до 31!</p>
+            </nav>
+        </nav>
+
+        <nav id="isMonth" class="modal">
+            <nav class="modal-content">
+                <span class="close">&times;</span>
+                <p>Пожалуйста, введите в строку ввода 'Месяц' число от 1 до 12!</p>
+            </nav>
+        </nav>
+
+        <nav id="isYear" class="modal">
+            <nav class="modal-content">
+                <span class="close">&times;</span>
+                <p>Пожалуйста, введите в строку ввода 'Год' число от 1900 до 2100!</p>
             </nav>
         </nav>
     </header>
@@ -107,6 +128,6 @@
         </nav>
         <p style="color: black; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); margin-left: 10px;">Результат матрицы в строку: <span id="matrix-inline"></span></p>
     </main>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

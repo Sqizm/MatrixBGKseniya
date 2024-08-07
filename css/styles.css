@@ -121,7 +121,6 @@ button {
     margin-top: 10px;
     background-color: #4CAF50;
     color: black;
-    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -298,5 +297,9 @@ p {
 
     .warning-class {
         font-size: 18px;
+    }
+
+    .bg-image {
+        height: 862px;
     }
 }
