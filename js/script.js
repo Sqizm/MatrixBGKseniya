@@ -133,7 +133,7 @@ document.getElementById('calculate').addEventListener('click', function() {
     document.getElementById('stable-cell').textContent = getStable;
 
     // Расчёт матрицы в строку
-    document.getElementById('matrix-inline').textContent = `${getCharacter}/${getEnergy}/${getInterest}/${getHealth}/${getLogic}/${getLabor}/${getLuck}/${getDuty}/${getMemory}; ЧС:${destinyNumber} Б:${getEverydayLife} Т:${getTemperament} Ц:${getPurposefulness} С:${getFamily} СТ:${getStable}`;
+    document.getElementById('matrix-inline').textContent = `${getCharacter}/${getEnergy}/${getInterest}/${getHealth}/${getLogic}/${getLabor}/${getLuck}/${getDuty}/${getMemory}; ЧС:${destinyNumber} Б:${getEverydayLife} Т:${getTemperament} Ц:${getPurposefulness} С:${getFamily} П:${getStable}`;
 });
 
 // Функция для подсчета суммы цифр числа
